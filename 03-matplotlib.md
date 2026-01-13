@@ -406,6 +406,63 @@ plt.show()
 ![](fig/global_surfaceu-colourbar.svg){alt="Global surface waveheight with a colourbar"}
 
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Investigate NetCDF Metadata
+
+NetCDF files don't just include data, they also include metadata describing their data.
+If we print the `globaldata` object we can see some of this data.
+
+Print the dataset and find out the following:
+
+* When was this dataset created?
+* How many timesteps are there in the data?
+* What date range does the data cover?
+
+:::::::::::::::  solution
+
+Running:
+
+```python
+print(globaldata)
+```
+
+Displays a lot of metadata about the dataset:
+
+* The earliest date mentioned in the history section is 2017.
+* Just one timestep is shown in the dimensions section.
+* The data covers 1979 as shown in the start_date and stop_date sections. 
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Accessing subsets of NetCDF data
+
+
+How might we get the value of first timestep at the Northernmost and Westernmost point?
+
+How could we access a North/South transect through the data at the 180th longitude point and first timestep? Make a graph of this data.
+
+:::::::::::::::  solution
+
+```python
+print(globaldata['hs_avg'][0][0][0])
+```
+
+
+```python
+plt.plot(globaldata['hs_avg'][0][:][180])
+```
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 ::::::::::::::::::::::::::::::::::::::::::::::  keypoints
 
 - "Use the `pyplot` module from the `matplotlib` library for creating simple visualizations."
