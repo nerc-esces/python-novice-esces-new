@@ -206,7 +206,7 @@ middle value in data: 2.446
 ```
 
 
-The expression `data[222, 2]` accesses the element at row 222, column 2. While this expression may
+The expression `data[222, 2]` accesses the element on the 223rd row and 3rd column. While this expression may
 not surprise you, using
  `data[0, 2]` to get the _3rd_ column in the _1st_ row might.
 Programming languages like Fortran, MATLAB and R start counting at 1
