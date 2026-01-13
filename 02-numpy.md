@@ -674,7 +674,7 @@ print(numpy.mean(reshaped_data, axis=1))
 ```
 
 
-which is the average wave height per month across all years.
+which is the average wave height per year across all months.
 
 ## Saving Data
 
