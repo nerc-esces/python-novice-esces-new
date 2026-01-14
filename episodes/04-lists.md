@@ -164,66 +164,72 @@ than to create a modified copy for every small change. You should consider both 
 when writing your code.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::  callout
+
+:::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Nested Lists
+
 Since a list can contain any Python variables, it can even contain other lists.
 
-For example, we could represent the products in the shelves of a small grocery shop:
+For example, you could represent the products on the shelves of a small grocery shop
+as a nested list called `veg`:
+
+![](fig/04_groceries_veg.png){alt='veg is represented as a shelf full of produce. There are three rows of vegetables on the shelf, and each row contains three baskets of vegetables. We can label each basket according to the type of vegetable it contains, so the top row contains (from left to right) lettuce, lettuce, and peppers.'}
+
+To store the contents of the shelf in a nested list, you write it this way:
 
 ```python
-x = [['pepper', 'zucchini', 'onion'],
-     ['cabbage', 'lettuce', 'garlic'],
-     ['apple', 'pear', 'banana']]
+veg = [['lettuce', 'lettuce', 'peppers', 'zucchini'],
+     ['lettuce', 'lettuce', 'peppers', 'zucchini'],
+     ['lettuce', 'cilantro', 'peppers', 'zucchini']]
 ```
 
+Here are some visual examples of how indexing a list of lists `veg` works. First,
+you can reference each row on the shelf as a separate list. For example, `veg[2]`
+represents the bottom row, which is a list of the baskets in that row.
 
-Here is a visual example of how indexing a list of lists `x` works:
+![](fig/04_groceries_veg0.png){alt='veg is now shown as a list of three rows, with veg\[0\] representing the top row of three baskets, veg\[1\] representing the second row, and veg\[2\] representing the bottom row.'}
 
-![hadleywickham-tweet](fig/indexing_lists_python.png){alt="x is represented as a pepper shaker containing several packets of pepper. [x[0]] is represented
-as a pepper shaker containing a single packet of pepper. x[0] is represented as a single packet of
-pepper. x[0][0] is represented as single grain of pepper.  Adapted
-from @hadleywickham."}
-
-Using the previously declared list `x`, these would be the results of the
-index operations shown in the image:
+Index operations using the image would work like this:
 
 ```python
-print(x[0])
+print(veg[2])
 ```
-
 
 ```output
-['pepper', 'zucchini', 'onion']
+['lettuce', 'cilantro', 'peppers', 'zucchini']
 ```
-
 
 ```python
-print(x[0][0])
+print(veg[0])
 ```
-
 
 ```output
-'pepper'
+['lettuce', 'lettuce', 'peppers', 'zucchini']
 ```
 
-
-It's also possible to explicitely return a list, either in a print statement or to save in a variable:
+To reference a specific basket on a specific shelf, you use two indexes. The first
+index represents the row (from top to bottom) and the second index represents
+the specific basket (from left to right).
+![](fig/04_groceries_veg00.png){alt='veg is now shown as a two-dimensional grid, with each basket labeled according to its index in the nested list. The first index is the row number and the second index is the basket number, so veg\[1\]\[3\] represents the basket on the far right side of the second row (basket 4 on row 2): zucchini'}
 
 ```python
-print([x[0]])
+print(veg[0][0])
 ```
-
 
 ```output
-[['pepper', 'zucchini', 'onion']]
+'lettuce'
 ```
 
+```python
+print(veg[1][2])
+```
 
-Thanks to [Hadley Wickham][hadleywickham-tweet]
-for the image above.
+```output
+'peppers'
+```
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 ## Heterogeneous Lists
 Lists in Python can contain elements of different types. Example:
