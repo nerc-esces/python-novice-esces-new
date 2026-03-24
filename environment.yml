@@ -1,0 +1,13 @@
+name: null
+
+channels:
+    - conda-forge
+    - defaults
+
+dependencies:
+    - jupyterlab
+    - pip
+    - python=3.13
+    - numpy>2.0
+    - matplotlib-base
+    - matplotlib-inline
