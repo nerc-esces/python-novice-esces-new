@@ -6,7 +6,7 @@ An introduction to Python for non-programmers using oceanography data.
 
 If you cannot install Miniforge/Python on your computer, then you can launch a Jupyter Lab instance online using MyBinder. Click on the Launch Binder icon below to do this.
 
-[![Run this lesson on MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NOC-OI/python-novice-esces/binder)
+[![Run this lesson on MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nerc-esces/python-novice-esces-new/binder)
 
 ## About the Lesson
 
@@ -21,7 +21,7 @@ how it is better to automate analysis using functions instead of repeating analy
 steps manually.
 
 The rendered version of the lesson is available at:
-<https://noc-oi.github.io/python-novice-esces/>.
+<https://nerc-esces.github.io/python-novice-esces-new/>.
 
 This lesson is derived from the [Analaysis of Inflammation Data lesson](inflammation_lesson). [Neil Chue Hong](npch), [Chris Wood](chris_wood), [Lucy Bricheno](lucy_b), and [Daniel Barker](daniel_b) were awarded a [NERC Advanced Short Training Course Grant](nerc_grant) to run Software Carpentry Courses specifically for
 NERC domain scientists, to include providing domain-specific examples. The wave-height data was taken from. Bricheno & Wolf (2018) 'Future wave conditions of Europe, in response to high‐end climate change scenarios.' Journal of Geophysical Research: Oceans.
