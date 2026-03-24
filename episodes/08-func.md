@@ -498,25 +498,25 @@ np.loadtxt('reshaped_data.csv', ',')
 ```error
 Traceback (most recent call last):
 
-  File ~/mambaforge/envs/python-workshop/lib/python3.11/site-packages/IPython/core/interactiveshell.py:3579 in run_code
+  File ~/miniforge3/lib/python3.13/site-packages/IPython/core/interactiveshell.py:3579 in run_code
     exec(code_obj, self.user_global_ns, self.user_ns)
 
   Cell In[26], line 1
     np.loadtxt('reshaped_data.csv', ',')
 
-  File /Users/username/anaconda3/lib/python3.6/site-packages/numpy/lib/_npyio_impl.py:1395 in loadtxt
+  File ~/miniforge3/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py:1395 in loadtxt
     arr = _read(fname, dtype=dtype, comment=comment, delimiter=delimiter,
 
-  File /Users/username/anaconda3/lib/python3.6/site-packages/numpy/lib/_npyio_impl.py:947 in _read
+  File ~/miniforge3/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py:947 in _read
     dtype = np.dtype(dtype)
 
-  File /Users/username/anaconda3/lib/python3.6/site-packages/numpy/_core/_internal.py:204 in _commastring
+  File ~/miniforge3/lib/python3.13/site-packages/numpy/_core/_internal.py:204 in _commastring
     newitem = (dtype, ast.literal_eval(repeats))
 
-  File /Users/username/anaconda3/lib/python3.6/ast.py:64 in literal_eval
+  File ~/miniforge3/lib/python3.13/ast.py:64 in literal_eval
     node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
 
-  File /Users/username/anaconda3/lib/python3.6/ast.py:50 in parse
+  File ~/miniforge3/lib/python3.13/ast.py:50 in parse
     return compile(source, filename, mode, flags,
 
   File <unknown>:1
