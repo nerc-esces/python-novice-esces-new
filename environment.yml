@@ -11,3 +11,4 @@ dependencies:
     - numpy>2.0
     - matplotlib-base
     - matplotlib-inline
+    - netCDF4
