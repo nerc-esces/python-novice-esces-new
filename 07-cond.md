@@ -167,7 +167,7 @@ Let's look at our wave data, and find which months we can operate the boats, bas
 We could look at each month individually:
 
 ```python
-data = numpy.loadtxt(fname='data/wavesmonthly.csv', delimiter=',', skiprows=1)
+data = numpy.loadtxt(fname='wavesmonthly.csv', delimiter=',', skiprows=1)
 reshaped_data = numpy.reshape(data[:,2], [37,12])
 
 month0 = numpy.mean(reshaped_data, axis=0)[0]
@@ -464,7 +464,7 @@ positive_sum = 0
 negative_sum = 0
 test_list = [3, 4, 6, 1, -1, -5, 0, 7, -8]
 for num in test_list:
-    if num 0:
+    if num > 0:
         positive_sum += num
     elif num == 0:
         pass
