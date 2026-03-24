@@ -201,6 +201,7 @@ First, let's make a `visualize` function that generates our plots:
 
 ```python
 import numpy as np
+import matplotlib.pyplot as plt
 def visualize(filename):
     data = np.loadtxt(fname=filename, delimiter=',')
     number_of_rows = data.shape[0] # total number of months
@@ -209,7 +210,7 @@ def visualize(filename):
     # need to reshape the data for plotting
     reshaped_data = np.reshape(data[:,2], [number_of_years,12])
 
-    fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+    fig = plt.figure(figsize=(10.0, 3.0))
 
     axes1 = fig.add_subplot(1, 3, 1)
     axes2 = fig.add_subplot(1, 3, 2)
@@ -225,7 +226,7 @@ def visualize(filename):
     axes3.plot(np.min(reshaped_data, axis=0))
 
     fig.tight_layout()
-    matplotlib.pyplot.show()
+    plt.show()
 ```
 
 
