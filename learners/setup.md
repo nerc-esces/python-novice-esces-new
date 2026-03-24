@@ -240,5 +240,5 @@ winpty python
 [anaconda-instructions]: https://carpentries.github.io/workshop-template/#python
 [anaconda-website]: https://www.anaconda.com/
 [gitbash]: https://gitforwindows.org
-[zipfile1]: https://github.com/NOC-OI/python-novice-esces/raw/refs/heads/main/data/python-esces-data.zip
+[zipfile1]: {{ site.url }}{{ site.baseurl }}/data/python-esces-data.zip
 
