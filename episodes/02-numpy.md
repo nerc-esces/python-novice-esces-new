@@ -244,6 +244,30 @@ which can be confusing when plotting data.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Reading Other Data
+
+Read the data in waves_2000s.csv (which should be in the same 
+directory as wavesmonthly.csv) into a variable called data_2000s 
+and display its shape.
+
+:::::::::::::::  solution
+```python
+data_2000s = numpy.loadtxt(fname='waves_00s.csv', delimiter=',', skiprows=1)
+data_2000s.shape
+```
+
+```output
+(119, 3)
+```
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## Slicing data
 An index like `[222, 2]` selects a single element of an array,
 but we can select whole sections as well.
